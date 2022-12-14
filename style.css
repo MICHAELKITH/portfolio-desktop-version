@@ -1,0 +1,115 @@
+* {
+    --main-bg-color: #FFFFFF;
+    --text-color: #6070FF;
+    --links-color: #344563;
+    --intro-color: #091E42;
+    --primary-B300:#7F8CFF;
+    --icon-color:#505F79;
+    --body-color:#E5E5E5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+    background: var(--body-color);
+}
+
+
+.header {
+    background-color: var(--main-bg-color);
+    padding: 25px 155px;
+    flex-direction: row;
+    width: 1440px;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    color: var(--text-color);
+}
+
+.my-links {
+    display: flex;
+    padding-left: 75%;
+    gap: 10px;
+    color: var(--links-color);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--links-color);
+
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+.portfolio {
+    position: absolute;
+    width: 1440px;
+    height: fit-content;
+    background-image: url("paper.gif");
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background: var(--main-bg-color);
+    border-bottom-left-radius: 130px;
+
+}
+.about-me{
+    margin: 260px 260px;
+   
+}
+.intro {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--intro-color);
+    width: 920px;
+height: 122px;
+letter-spacing: 0.37px;
+
+
+}
+.desc{
+color: var(--links-color);
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+    color: var(--icon-color);
+    padding-top: 20px;
+
+}
+.s-icons{
+color: var(--primary-B300);
+font-weight: 500;
+font-size: 16px;
+padding-top: 20px;
+}
+.s-icons:hover{
+    color: var(--intro-color);
+}
+
+.section-1{
+    width: 1156px;
+    height: 496px;
+    background-color: var(--main-bg-color);
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;
+}
