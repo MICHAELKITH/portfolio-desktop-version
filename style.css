@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
   --main-bg-color: #fff;
   --text-color: #6070ff;
@@ -165,7 +168,7 @@ a:hover {
   border-radius: 12px;
   padding: 24px 24px 24px 24px;
   position: absolute;
-  left: 590px;
+  left: 650px;
 }
 
 .left-items {
@@ -206,10 +209,10 @@ a:hover {
 
 .desc-left {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   color: #344563;
-  margin-right: 55%;
+  margin-right: 53%;
   padding-top: 10px;
 }
 
@@ -284,7 +287,7 @@ a:hover {
 }
 
 .btn {
-  padding-top: 80px;
+  padding-top: 55px;
   margin-right: 312px;
   background-color: white;
   color: #396df2;
@@ -293,7 +296,7 @@ a:hover {
 }
 
 .btn2 {
-  padding-top: 80px;
+  padding-top: 50px;
   margin-right: 948px;
   background-color: white;
   color: #396df2;
@@ -377,24 +380,36 @@ a:hover {
   display: flex;
   padding-top: 25px;
   gap: 350px;
+  color: #344563;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 24px;
 }
 
 .other-skills {
-  padding-top: 35px;
+  padding-top: 5px;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 120px;
+  color: #344563;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 24px;
 }
 
 .frame {
   display: flex;
-  gap: 330px;
+  gap: 350px;
+  padding-top: 10px;
 }
 
 .s-frame {
   display: flex;
-  gap: 400px;
+  gap: 405px;
+  padding-top: 20px;
 }
 
 .text-2:hover {
@@ -561,7 +576,7 @@ a:hover {
   border: 1px solid var(--main-bg-color);
   margin-left: 10px;
   margin-top: -10px;
-  width: 142px;
+  width: 150px;
   height: 48px;
   background-color: #fff;
   border-radius: 8px;
