@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   --main-bg-color: #fff;
@@ -28,43 +28,128 @@ body {
 .main {
   width: 100%;
   height: 916px;
+  overflow: hidden;
 }
 
-.header-1 {
+.navbar{
   background-color: var(--main-bg-color);
-  padding: 25px 155px;
+  padding: 25px 150px;
   flex-direction: row;
-}
-
-nav {
+  padding-top: 25px;
+  align-items: center;
+  justify-content: space-between;
   display: flex;
 }
+.toggle-button{
+  flex-direction: column;
+  justify-content: space-around;
+  top: .75rem;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+ display: none;
+  padding-top: 30px;
+}
+.toggle-button a{
+  border-radius: 10px;
+  width: 100%;
+  height: 10px;
+  background-color: var(--text-color);
 
+}
 .logo {
   color: var(--text-color);
+ flex: none;
+ margin: .5rem;
+ font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
 }
 
-.my-links {
-  display: flex;
-  padding-left: 75%;
-  gap: 10px;
+.navbar-links {
+  padding-left: 80%;
   color: var(--links-color);
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  
 }
-
+.navbar-links ul{
+  display: flex;
+  gap: 10px;
+}
+.navbar-links li{
+  list-style: none;
+  display: block;
+}
 ul {
   list-style: none;
 }
 
 a:link {
   text-decoration: none;
+
 }
 
 a:hover {
   color: var(--text-color);
 }
+
+
+@media only screen and (max-width: 600px){
+  .toggle-button {
+    display: flex;
+    right: 0;
+    top: 0;
+    justify-self: center;
+    padding-top: 10px;
+    color: #6070ff;
+    margin: 5px;
+  }
+  .navbar-links{
+    display: none;
+  }
+  .navbar{
+    gap: 90%;
+    width: 375px;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+  }
+  .intro-part{
+
+    display: flex;
+  }
+  .desc{
+    margin: 24px 24px;
+    display: flex;
+  }
+  .about-me{
+    margin: 24px auto;
+
+  }
+  .intro{
+    font-weight: 100;
+
+    font-style: normal;
+    border-end-start-radius: 17%;
+    background-color: #fff;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background-size: cover;
+  }
+ 
+
+
+}
+
+
 
 .intro-part {
   position: absolute;
@@ -580,6 +665,8 @@ a:hover {
   height: 48px;
   background-color: #fff;
   border-radius: 8px;
+  transition: width 2s, height 4s;
+  
 }
 
 /* -------------------------------------------FORM BUTTON HOVER-DISABLED-ACTIVE--------------------------------------------------------- */
@@ -601,6 +688,9 @@ a:hover {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  width: 300px;
+  height: 300px;
+  
 }
 
 .button-submit:disabled {
